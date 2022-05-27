@@ -4,16 +4,16 @@ import './Message.css'
 class Message extends Component{
     constructor(props){
         super(props)
-        let temp = JSON.parse(this.props.Message)
+        // let temp = JSON.parse(this.props.Message)
         this.state = {
-            message: temp
+            message: props.message
         }
     }
 
     render(){
         return(
             <div className="message" >
-                <p>{this.state.message.body}</p>
+                <p>{this.state.message}</p>
             </div>
         )
     }

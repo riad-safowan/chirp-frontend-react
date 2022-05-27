@@ -1,7 +1,10 @@
 var socket = new WebSocket("ws://localhost:9090/ws");
 
+let update;
+
 let connect = (cb) => {
   console.log("connecting...");
+  update = cb
 
   socket.onopen = () => {
     console.log("connected");
@@ -9,6 +12,7 @@ let connect = (cb) => {
 
   socket.onmessage = (msg) => {
     console.log("Message from socket: " + msg);
+    cb(msg);
   };
 
   socket.onclose = (event) => {
@@ -23,6 +27,7 @@ let connect = (cb) => {
 let sendMsg = (msg) => {
   console.log("sending msg: " + msg);
   socket.send(msg);
+  update(msg);
 };
 
 

@@ -9,7 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ChatHistory: [],
+      ChatHistory: [{"id":1, msg:"asdf"},{"id":2, msg:"zxcv"}],
     };
   }
 
@@ -17,7 +17,7 @@ class App extends Component {
     connect((msg) => {
       console.log("New Message");
       this.setState((prevState) => ({
-        ChatHistory: [...prevState.ChatHistory, msg],
+        ChatHistory: [...prevState.ChatHistory, {"id":prevState.ChatHistory.size, "msg":msg}],
       }));
       console.log(this.state);
     });

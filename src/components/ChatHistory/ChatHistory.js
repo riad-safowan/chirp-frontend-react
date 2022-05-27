@@ -4,13 +4,12 @@ import Message from "../Message/Message";
 
 class ChatHistory extends Component {
   render() {
-    this.props.ChatHistory.map((msg) => (
-      <Message key={msg.timeStamp} message={msg.data} />
-    ));
+    const messages = this.props.ChatHistory.map(msg => <Message key={msg.id} message={msg.msg} />);
 
     return (
       <div className="chat-history">
         <h2>Chat History</h2>
+        {messages}
       </div>
     );
   }
