@@ -9,17 +9,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ChatHistory: [{"id":1, msg:"asdf"},{"id":2, msg:"zxcv"}],
+      ChatHistory: [],
     };
   }
 
   componentDidMount() {
     connect((msg) => {
-      console.log("New Message");
+      console.log("New Message: "+ msg.body);
       this.setState((prevState) => ({
-        ChatHistory: [...prevState.ChatHistory, {"id":prevState.ChatHistory.size, "msg":msg}],
+        ChatHistory: [...prevState.ChatHistory, {"key":prevState.ChatHistory.size, "message":msg.body}],
       }));
-      console.log(this.state);
     });
   }
 

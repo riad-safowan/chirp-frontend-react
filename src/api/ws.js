@@ -1,18 +1,15 @@
-var socket = new WebSocket("ws://localhost:9090/ws");
-
-let update;
+var socket = new WebSocket("ws://192.168.31.64:9090/ws");
 
 let connect = (cb) => {
   console.log("connecting...");
-  update = cb
 
   socket.onopen = () => {
     console.log("connected");
   };
 
   socket.onmessage = (msg) => {
-    console.log("Message from socket: " + msg);
-    cb(msg);
+    console.log("Message from socket: " + msg.data);
+    cb(JSON.parse(msg.data));
   };
 
   socket.onclose = (event) => {
@@ -27,7 +24,6 @@ let connect = (cb) => {
 let sendMsg = (msg) => {
   console.log("sending msg: " + msg);
   socket.send(msg);
-  update(msg);
 };
 
 
