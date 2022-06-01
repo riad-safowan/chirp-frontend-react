@@ -1,15 +1,15 @@
 {
-  "files": {
-    "main.css": "/chirp-frontend-react/static/css/main.d831bbb9.css",
-    "main.js": "/chirp-frontend-react/static/js/main.dc4bc555.js",
-    "static/js/787.f8b35af0.chunk.js": "/chirp-frontend-react/static/js/787.f8b35af0.chunk.js",
-    "index.html": "/chirp-frontend-react/index.html",
-    "main.d831bbb9.css.map": "/chirp-frontend-react/static/css/main.d831bbb9.css.map",
-    "main.dc4bc555.js.map": "/chirp-frontend-react/static/js/main.dc4bc555.js.map",
-    "787.f8b35af0.chunk.js.map": "/chirp-frontend-react/static/js/787.f8b35af0.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.d831bbb9.css",
-    "static/js/main.dc4bc555.js"
-  ]
+  "main.css": "/chirp-frontend-react/static/css/main.fa44a388.chunk.css",
+  "main.js": "/chirp-frontend-react/static/js/main.cdfd47e1.chunk.js",
+  "main.js.map": "/chirp-frontend-react/static/js/main.cdfd47e1.chunk.js.map",
+  "static/js/1.8c98aab8.chunk.js": "/chirp-frontend-react/static/js/1.8c98aab8.chunk.js",
+  "static/js/1.8c98aab8.chunk.js.map": "/chirp-frontend-react/static/js/1.8c98aab8.chunk.js.map",
+  "static/js/2.d8945bd6.chunk.js": "/chirp-frontend-react/static/js/2.d8945bd6.chunk.js",
+  "static/js/2.d8945bd6.chunk.js.map": "/chirp-frontend-react/static/js/2.d8945bd6.chunk.js.map",
+  "runtime~main.js": "/chirp-frontend-react/static/js/runtime~main.34c98727.js",
+  "runtime~main.js.map": "/chirp-frontend-react/static/js/runtime~main.34c98727.js.map",
+  "static/css/main.fa44a388.chunk.css.map": "/chirp-frontend-react/static/css/main.fa44a388.chunk.css.map",
+  "index.html": "/chirp-frontend-react/index.html",
+  "precache-manifest.4b47eb3c817d7e59ccd5cc7fc5930539.js": "/chirp-frontend-react/precache-manifest.4b47eb3c817d7e59ccd5cc7fc5930539.js",
+  "service-worker.js": "/chirp-frontend-react/service-worker.js"
 }
